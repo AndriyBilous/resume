@@ -26,6 +26,7 @@ body {
   width: 25%;
   color: #ffffff;
   overflow: auto;
+  max-width: 300px;
 }
 .left-column__photo {
   margin-top: 10%;
