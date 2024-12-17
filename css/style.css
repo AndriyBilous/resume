@@ -9,24 +9,27 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .columns__container {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 .left-column__container {
-  min-height: -moz-min-content;
-  min-height: min-content;
-  position: fixed;
-  height: 100%;
+  position: sticky;
   background-color: #1e2939;
   width: 25%;
   color: #ffffff;
-  overflow: auto;
   max-width: 300px;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
 }
 .left-column__photo {
   margin-top: 10%;
@@ -101,10 +104,8 @@ body {
 
 .right-column__container {
   height: 100%;
-  overflow-y: scroll;
   background-color: #ffffff;
   width: 65%;
-  margin: 0 0 0 25%;
   padding-right: 5%;
   padding-left: 5%;
 }
