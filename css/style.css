@@ -22,7 +22,6 @@ body {
 }
 
 .left-column__container {
-  position: sticky;
   background-color: #1e2939;
   width: 25%;
   color: #ffffff;
@@ -30,6 +29,7 @@ body {
   overflow-y: scroll;
   top: 0;
   left: 0;
+  position: sticky;
 }
 .left-column__photo {
   margin-top: 10%;
@@ -188,10 +188,5 @@ body {
 }
 .right-column__additional-info__text {
   font-size: 1rem;
-}
-
-@media (max-height: 700px) {
-  .left-column__container {
-    overflow-y: scroll;
-  }
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

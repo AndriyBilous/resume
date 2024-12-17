@@ -25,7 +25,6 @@ body {
 
 .left-column {
   &__container {
-    position: sticky;
     background-color: #1e2939;
     width: 25%;
     color: #ffffff;
@@ -33,6 +32,7 @@ body {
     overflow-y: scroll;
     top: 0;
     left: 0;
+    position: sticky;
   }
 
   &__photo {
@@ -210,14 +210,15 @@ body {
     font-size: 1.5rem;
     &__text {
       font-size: 1rem;
+      padding-bottom: 50px;
     }
   }
 }
 
-@media (max-height: 700px) {
-  .left-column {
-    &__container {
-      overflow-y: scroll;
-    }
-  }
-}
+// @media (max-height: 700px) {
+//   .left-column {
+//     &__container {
+//       overflow-y: scroll;
+//     }
+//   }
+// }
